@@ -1,0 +1,15 @@
+extends layout
+
+block content
+
+  .container.feedback-display.well
+      form(method="post")
+        .form-group
+          input(type="text", placeholder="Customer name (optional)",name="customer")#customer.input-xlarge
+         .form-group
+          input(type="text", placeholder="Staff name (optional)",name="staff")#staff.input-xlarge
+        .form-group
+          label(for="text") Feedback
+          textarea(rows="3", name="body")#text.input-xxlarge
+        button(type="submit").btn.btn-default.pull-right.btn-primary Save
+        a(href="admin").pull-right.btn Cancel

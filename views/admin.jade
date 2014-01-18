@@ -1,0 +1,29 @@
+extends layout
+
+block content
+  .container.well
+      table.table.table-hover
+        tr
+          th Feedback
+          th(width="15%") Staff
+          th(width="15%") Customer
+          td(width="5%")
+          td(width="5%")
+        - for (var r in rows)
+            tr
+              td= rows[r].body
+              td= rows[r].staff
+              td= rows[r].customer
+              td
+                form( method="get", action="/edit") 
+                  input(name="_id", type="hidden", value=rows[r].id) 
+                  button(type="submit").btn.btn-primary.btn-small
+                    i.icon-edit.icon-gray
+              td
+                form( method="post", action="/delete") 
+                  input(name="_id", type="hidden", value=rows[r].id)
+                  button(type="submit").btn.btn-danger.btn-small 
+                    i.icon-trash.icon-gray 
+
+      a(href="add").pull-right.btn.btn-primary Add
+              

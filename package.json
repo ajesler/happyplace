@@ -1,0 +1,23 @@
+{
+  "name": "HappyPlace",
+  "description": "A dashboard for displaying positive customer feedback",
+  "version": "0.0.1",
+  "license" : "MIT",
+  "author": {
+    "name" : "Andrew Esler", 
+    "email" : "aj@esler.co.nz"
+  },
+  "repository": {
+     "type": "git",
+     "url": "http://github.com/ajesler/happyplace.git"
+  },
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.4.8",
+    "jade": "*",
+    "sqlite3": ">= 2.2.0"
+  }
+}

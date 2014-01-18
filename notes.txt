@@ -1,0 +1,12 @@
+https://github.com/jasonbrice/nodeling
+
+http://blog.ijasoneverett.com/2013/03/a-sample-app-with-node-js-express-and-mongodb-part-1/
+http://blog.ijasoneverett.com/2013/04/a-sample-app-with-node-js-express-and-mongodb-part-2/
+	https://github.com/ijason/NodeJS-Sample-App
+
+http://evanhahn.com/understanding-express-js/
+
+http://stadolf.wordpress.com/2013/12/02/wiring-up-dependencies-in-node-js-wrap-up-of-my-best-practices-2/
+
+https://npmjs.org/package/sqlite3
+

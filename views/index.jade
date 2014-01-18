@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  .row
+    .span6.offset3.well.feedback-display-container
+      .feedback-display
+        h4#staff.staff-name
+        blockquote
+          p#body
+        h4#customer.customer-name.pull-right
+
+  != "<script type='text/javascript'>"
+  != "feedback=" + feedback
+  != "</script>"
+
+  script(src="./javascripts/main.js")

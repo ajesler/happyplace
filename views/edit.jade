@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  .container.feedback-display.well
+      form(method="post")
+        input(name="_id", type="hidden", value=data.id)
+        .form-group
+          input(type="text", placeholder="Customer name",name="customer",value=data.customer)#customer.form-control
+        .form-group
+          input(type="text", placeholder="Staff name",name="staff",value=data.staff)#staff.form-control
+        .form-group
+          label(for="text") Feedback
+          textarea(rows="3", name="body")#text.form-control
+            | #{data.body}
+        button(type="submit").btn.btn-default.pull-right.btn-primary Save
+        a(href="admin").pull-right.btn Cancel
