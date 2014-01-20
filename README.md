@@ -7,6 +7,7 @@ A dashboard for displaying positive customer feedback
 
 ```bash
 npm install
+mkdir databases
 node app
 ```
 
