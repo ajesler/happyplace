@@ -34,7 +34,6 @@ exports.fadd_post = function(req, res){
 		customer: req.param('customer')
 	};
 
-	console.log("New Data: %j", newData);
 	feedback.add(newData, function(err){
 		if(err){
 			res.render('error', { message: err });
@@ -46,7 +45,6 @@ exports.fadd_post = function(req, res){
 
 exports.fedit = function(req, res){
 	var id = req.param('_id');
-	console.log("editing id: "+id);
 
 	feedback.get(id, function(err, row){
 		if(err){
@@ -77,6 +75,7 @@ exports.fedit_post = function(req, res){
 
 exports.fdelete = function(req, res){
 	var id = req.param('_id');
+	
 	feedback.delete(id, function(err){
 		err = "A problem with delete!";
 		if(err){
